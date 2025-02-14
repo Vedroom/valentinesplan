@@ -53,7 +53,7 @@ function getCurrentHour() {
         if (currentHour < firstActTime) { //si la hora es menor a la hora establecida no abre
             window.location.href = "index.html";
             event.preventDefault(); // Evita que se abra la página
-            alert("Oh, parece que este acto aún no está disponible... ¡Lo sentimos! 😅");
+            alert("Este acto estará habilitado a las 4:00 pm 💫");
         } 
     });
     
@@ -61,7 +61,7 @@ function getCurrentHour() {
         if (currentHour < secondActTime) { //si la hora es menor a la hora establecida no abre
             window.location.href = "index.html";
             event.preventDefault(); // Evita que se abra la página
-            alert("Oh, parece que este acto aún no está disponible... ¡Lo sentimos! 😅");
+            alert("Aun no ha pasado el primer acto 😎");
         } 
     });
     
@@ -70,6 +70,6 @@ function getCurrentHour() {
         if (currentHour < cierre) { //si la hora es menor a la hora establecida no abre
             window.location.href = "index.html";
             event.preventDefault(); // Evita que se abra la página
-            alert("Oh, parece que este acto aún no está disponible... ¡Lo sentimos! 😅");
+            alert("Ya quieres saber como acaba? Tranquilaaa😅");
         } 
     });
