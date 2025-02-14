@@ -47,7 +47,7 @@ function getCurrentHour() {
     // Horarios para cada acto
     const firstActTime = 16;  // 4:00 PM
     const secondActTime = 21; // 9:00 PM
-    const cierre = 23; // 11:00 PM
+    const cierre = 22; // 11:00 PM
 
     document.getElementById("firstActButton").addEventListener('click', function(event) {
         if (currentHour < firstActTime) { //si la hora es menor a la hora establecida no abre
