@@ -44,32 +44,9 @@ function getCurrentHour() {
 }
     const currentHour = getCurrentHour();
 
-    // Horarios para cada acto
+    //**Horarios para cada acto
     const firstActTime = 16;  // 4:00 PM
     const secondActTime = 21; // 9:00 PM
     const cierre = 22; // 11:00 PM
 
-    document.getElementById("firstActButton").addEventListener('click', function(event) {
-        if (currentHour < firstActTime) { //si la hora es menor a la hora establecida no abre
-            window.location.href = "index.html";
-            event.preventDefault(); // Evita que se abra la página
-            alert("Este acto estará habilitado a las 4:00 pm 💫");
-        } 
-    });
     
-    document.getElementById("secondActButton").addEventListener('click', function(event) {
-        if (currentHour < secondActTime) { //si la hora es menor a la hora establecida no abre
-            window.location.href = "index.html";
-            event.preventDefault(); // Evita que se abra la página
-            alert("Aun no ha pasado el primer acto 😎");
-        } 
-    });
-    
-
-    document.getElementById("closingButton").addEventListener('click', function(event) {
-        if (currentHour < cierre) { //si la hora es menor a la hora establecida no abre
-            window.location.href = "index.html";
-            event.preventDefault(); // Evita que se abra la página
-            alert("Ya quieres saber como acaba? Tranquilaaa😅");
-        } 
-    });
